@@ -8,6 +8,7 @@
 # Write a function that can concat files
 
 # TODO: Improve how to handle with invalid/nonexistent files
+# TODO: Separate in more than one file
 
 
 # Libraries
@@ -41,8 +42,6 @@ class Concat:
         
         return data
 
-<<<<<<< HEAD
-
     def __show_content(self, data):
         """
         Description
@@ -70,7 +69,7 @@ class Concat:
             Nothing.
         """
         if(output_file):
-            with open(output_file, 'w') as outfile:
+            with open(output_file, 'w') as outfile:        
                 for file_name in file_list:
                     data = self.__read_file(file_name)
                     
@@ -85,19 +84,6 @@ class Concat:
                 if(data):
                     self.__show_content(data)
                 
-
-=======
-    def show_content(self, data):
-        print(data)
-
-    def concat(self, file_list, output_file):
-        with open(output_file, 'w') as outfile:
-            for file_name in file_list:
-                data = self.read_file(file_name)
-                self.show_content(data)
-                outfile.write(data)
-                
->>>>>>> dd40c41209e9c9424ddaebdcc0fc4ed9250daeaf
 def main():
     parser = ArgumentParser(description= "Pythonic way of unix command called cat (concat)")
     
