@@ -11,17 +11,24 @@
 from argparse import ArgumentParser
 
 class Concat:
-    def __init__(self):
-        pass
 
-    def read_file(self, file):
-        pass
+    def read_file(self, file_name):
+        f = open(file_name, 'r')
+        data = f.read()
+        
+        return data
 
-    def show_content(self, file):
-        pass
+
+    def show_content(self, data):
+        print(data)
 
     def concat(self, file_list, output_file):
-        pass
+        with open(output_file, 'w') as outfile:
+            for file_name in file_list:
+                data = self.read_file(file_name)
+                self.show_content(data)
+                outfile.write(data)
+
 
 
 
