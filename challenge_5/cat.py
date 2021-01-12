@@ -18,7 +18,6 @@ class Concat:
         
         return data
 
-
     def show_content(self, data):
         print(data)
 
@@ -28,10 +27,7 @@ class Concat:
                 data = self.read_file(file_name)
                 self.show_content(data)
                 outfile.write(data)
-
-
-
-
+                
 def main():
     parser = ArgumentParser(description= "Pythonic way of unix command called cat (concat)")
     
