@@ -7,9 +7,9 @@ This repository will be used to publish all challenges from the book Learn More 
 
 ## Challenges
 
-[argparse](/challenge_4)
-[cat](/challenge_5)
-[find](/challenge_6)
+- [argparse](/challenge_4)
+- [cat](/challenge_5)
+- [find](/challenge_6)
 
 
 ## Reference
