@@ -8,11 +8,6 @@
 # Write a function that can concat files
 
 # TODO: Improve how to handle with invalid/nonexistent files
-# TODO: Separate in more than one file
-
-
-# Libraries
-from argparse import ArgumentParser
 
 class Concat:
     """A Pythonic way of unix command cat"""
@@ -83,23 +78,3 @@ class Concat:
                 
                 if(data):
                     self.__show_content(data)
-                
-def main():
-    parser = ArgumentParser(description= "Pythonic way of unix command called cat (concat)")
-    
-    # Positional Arguments for file(s)
-    parser.add_argument("files", metavar="F", nargs="+",
-                        help="A single or a list of files to be concat")
-    
-    # Output file flag
-    parser.add_argument("-o", "--output", 
-                        help="The output file that will contain the concatenated files")
-
-    args = parser.parse_args()
-    
-    cat = Concat()
-    
-    cat.concat(file_list=args.files, output_file= args.output)
-    
-if __name__ == '__main__':
-    main()
