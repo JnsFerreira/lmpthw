@@ -28,13 +28,11 @@ $ python3 find.py [OPTIONS]
 $ python3 find.py [STARTING_DIRECTORY] [NAME] [TYPE] [COMMAND] [SHOW]
 ```
 
-`starting_directory`:
-
-`-n` or `--name`: File name to be seach
-`-t` or `--type`: Type to be search. Can be "f" for files or "d" to directories
-`-cmd` or `--command`: For founded files or directories, apply the command. You must pass a string with this format: `<command> {}`. The file or directory name will be replaced on {}
-`-s` or `--show`: Display the results.
-
+- `starting_directory`: The initial directory to search 
+- `-n` or `--name`: File name to be seach
+- `-t` or `--type`: Type to be search. Can be "f" for files or "d" to directories
+- `-cmd` or `--command`: For founded files or directories, apply the command. You must pass a string with this format: `<command> {}`. The file or directory name will be replaced on {}
+- `-s` or `--show`: Display the results.
 
 **Example:** Find all text files and show the content with cat command, starting at foo/bar directory
 
