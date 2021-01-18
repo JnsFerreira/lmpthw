@@ -6,7 +6,7 @@ def main():
 
     # Positional Arguments for file(s)
     parser.add_argument("files", metavar="F", nargs="+",
-                        help="A single or a list of files to be concat")
+                        help="A single or a list of files to be concatenated")
 
     # Output file flag
     parser.add_argument("-o", "--output",
