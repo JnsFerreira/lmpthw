@@ -22,7 +22,9 @@ def main():
 
     grep = Grep()
 
-    grep.search(pattern = args.pattern[0], directory = args.directory[0])
+    grep.search(pattern = args.pattern[0], 
+                location = args.directory[0], 
+                recursive=args.recursive)
 
 if __name__ == '__main__':
     main()
